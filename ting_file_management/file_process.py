@@ -37,7 +37,11 @@ def remove(instance):
 
 
 def file_metadata(instance, position):
-    """Aqui irá sua implementação"""
+    """
+    Return the value according to the index or an error if the index
+    does not exist
+    """
+
     try:
         print(instance.search(position), file=sys.stdout)
     except IndexError:
