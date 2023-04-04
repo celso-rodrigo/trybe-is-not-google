@@ -3,7 +3,11 @@ import sys
 
 
 def process(path_file, instance):
-    """Aqui irá sua implementação"""
+    """
+    If it doesn't already exist, returns a Dict and insert it into the instance
+    with the file name, number of lines, and content.
+    """
+
     for index in range(len(instance)):
         if path_file in instance.search(index).values():
             return None
